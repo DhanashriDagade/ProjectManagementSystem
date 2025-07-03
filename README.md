@@ -72,7 +72,8 @@ A full-stack web application built using **Spring Boot**, **MySQL**, and **React
 
 ## 🎥 Demo Video
 
-[📹 Click to View Demo](assets/ProjectManagementSystem.mp4)
+[📹 Click to View Demo]
+https://github.com/user-attachments/assets/fcd8034b-2add-4d42-98ab-1830cbd39398
 
 ---
 
