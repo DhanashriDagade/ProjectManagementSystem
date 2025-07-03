@@ -1,0 +1,91 @@
+.active-link {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.active-link:hover {
+  background-color: #0b5ed7 !important;
+}
+
+.nav-link:hover {
+  background-color: #f8694c;
+  text-decoration: none;
+}
+
+/* Body background */
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+/* Navbar and Footer Gradient */
+.custom-navbar, .custom-footer {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation link styles */
+.nav-link-custom {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #0e0d0d !important;
+  transform: translateY(-2px);
+}
+
+.rounded-pill:hover{
+   background-color: #f8694c;
+   color: #0e0d0d 
+}
+
+/* Navbar Style (if custom) */
+.custom-navbar {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Optional scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+/* Sidebar styling */
+.sidebar-link {
+  font-weight: 500;
+  color: #201f1f;
+  transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff !important;
+  transform: translateX(4px);
+}
+
+.sidebar-link .sidebar-icon {
+  font-size: 1.2rem;
+}
+
+.sidebar-label {
+  font-size: 1rem;
+}
+
+.naa:hover{
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}

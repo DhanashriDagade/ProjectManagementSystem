@@ -1,0 +1,82 @@
+/* Animated Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #1a2a6c, #0f2027);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+}
+.login-section {
+  height: 100vh;
+  background: linear-gradient(-45deg, #1e3c72, #4b75be, #1a2a6c, #1e3f4d);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+}
+
+
+
+/* Animated gradient background movement */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Feature icons hover scale effect */
+.features-section .bi {
+  transition: transform 0.3s ease;
+}
+.features-section .bi:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+/* Call-To-Action (CTA) Section */
+.cta-section {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-section button {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-section button:hover {
+  background-color: #f8f9fa;
+  color: #0056b3;
+  transform: translateY(-2px);
+}
+.reviews-section .card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
