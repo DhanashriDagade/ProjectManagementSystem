@@ -1,16 +1,26 @@
 # 📋 Project Management System
 
-A full-stack web application built using **Spring Boot**, **MySQL**, and **React (Vite)** to efficiently manage projects in a corporate environment. This system supports Admin, Manager, and Employee roles — each with custom dashboards and APIs.
+A full-stack web application built using **Spring Boot**, **MySQL**, and **React (Vite)** to efficiently manage projects in a corporate environment. This system supports **Admin**, **Manager**, and **Employee** roles — each with dedicated dashboards and REST APIs.
+
+---
+
+## 🚀 Tech Stack
+
+| Layer      | Technology Used                         |
+|------------|------------------------------------------|
+| Frontend   | React.js, Vite, React Bootstrap          |
+| Backend    | Spring Boot (Java), REST APIs            |
+| Database   | MySQL                                    |
+| Auth       | JWT (JSON Web Tokens)                    |
 
 ---
 
 ## 🎯 Roles & Functionalities
 
 ### 🔐 Public User
-- **Register as Admin** → `POST /api/auth/register`
-- **Login** (Admin/Manager/Employee) → `POST /api/auth/login`
-
-Once logged in, users receive a **JWT Token**.
+- 🔹 **Register as Admin** → `POST /api/auth/register`
+- 🔹 **Login** (Admin/Manager/Employee) → `POST /api/auth/login`
+> Once logged in, users receive a **JWT Token** to access secured routes.
 
 ---
 
@@ -42,23 +52,35 @@ Once logged in, users receive a **JWT Token**.
 ### 👩‍💻 Employee Dashboard
 - 🔹 View Assigned Projects → `GET /api/employee/projects`
 - 🔹 Update Project Status → `PUT /api/employee/project-status/{projectId}`  
-  (Task Status: `NOT_STARTED`, `IN_PROGRESS`, `COMPLETED`)
+> (Task Status: `NOT_STARTED`, `IN_PROGRESS`, `COMPLETED`)
 
 ---
 
-## 🖼️ API Flow Diagram
+## 📸 Screenshots
 
-Here’s a visual overview of the API structure across roles:
+| Login | Admin Dashboard | Manager Dashboard |
+|-------|------------------|-------------------|
+| ![](assets/LoginPage.png) | ![](assets/Admin%20Dashboard.png) | ![](assets/manager%20Dashboard.png) |
 
-![API Flow Diagram](assets/api-flow.png)
+| Register Admin | Assign Projects | Employee Dashboard |
+|----------------|------------------|---------------------|
+| ![](assets/RegisterAdmin.png) | ![](assets/managerpage1.png) | ![](assets/employeedashboard.png) |
 
-> 📌 Place this image in a folder like `/assets/api-flow.png` or `/frontend/public/assets/`
+> 🧠 You can explore more in the `assets/` folder.
 
 ---
 
-## 🚀 How to Run the Project
+## 🎥 Demo Video
 
-### ✅ Start Spring Boot Backend
+[📹 Click to View Demo](assets/ProjectManagementSystem.mp4)
+
+---
+
+## 📂 Project Structure
+
 ```bash
-cd backend
-mvn spring-boot:run
+ProjectManagementSystem/
+├── backend/       # Spring Boot API
+├── frontend/      # React Vite frontend
+├── assets/        # Screenshots and demo video
+└── README.md
